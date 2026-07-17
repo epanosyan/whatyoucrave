@@ -1,12 +1,11 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  max-width: 700px;
-  margin: auto;
-}
+function chooseBase(base) {
+  const result = document.getElementById("result");
 
-button {
-  margin: 5px;
-  padding: 10px 14px;
-  cursor: pointer;
+  if (base === "Rice") {
+    result.textContent = "Try Healthy Chicken Curry or a Rice Bowl.";
+  } else if (base === "Potatoes") {
+    result.textContent = "Try Potato Wedges with Chicken or Shakshuka with potatoes.";
+  } else if (base === "Wrap") {
+    result.textContent = "Try Wrap-Based Pizza or a Chicken Caesar Wrap.";
+  }
 }
